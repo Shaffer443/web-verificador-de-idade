@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box; 
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+
+    height: 120vh;
+
+    background: linear-gradient(45deg,#1C315E,#227C70, #88A47C,#E6E2C3);
+    background-size: 400%, 400%;
+
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors{
+    0%{
+      background-position: 0% 50%;
+    }
+  
+    50%{
+      background-position: 100% 50%;
+    }
+  
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+  header{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+
+    header h1{
+
+        font-size: 3.6rem;
+
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+section{
+
+    margin: auto; /*toda a tag fica centralizada, pdoendo ter elementos que não fiquem dependendo da configuração*/    
+
+    max-width: 400px;
+    
+
+    background-color: white;
+
+    border-radius: 10px 10px;
+}
+
+    section div{
+        
+        
+
+        padding: 20px;
+
+        font-size: 2.5rem;
+    }
+
+    section p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    } 
+        #ano{
+
+            height: 30px;
+
+            margin-left: 80px;
+            margin-bottom: 5px;
+
+        }
+
+        #masc{
+            margin-left: 50px;
+        }
+
+        #fem{
+            
+        }
+
+        #botao{
+            margin-top: 15px;
+            padding: 5px;
+
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            font-weight: bold; /*colcoando em negrito e outras funcionalidades podems er úteis dentro do font-weight*/
+
+            
+        }
+
+
+
+    #resultado{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+footer{
+
+    font-size: 2.0rem;
+    color: #fff;
+
+    padding-top: 20px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+        footer p a{
+
+            font-size: 2.0rem;
+            color: #fff;
+            text-decoration: none;
+
+        }
